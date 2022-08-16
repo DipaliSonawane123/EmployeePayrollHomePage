@@ -67,5 +67,5 @@ const update = (node) => {
     let employeePayrollData = employeePayrollList.find(employeeData => employeeData._id == node.id);
     if (!employeePayrollData) return;
     localStorage.setItem("EmployeeToEdit", JSON.stringify(employeePayrollData));
-    window.location.replace(site_properties.add_employee_payroll_page);
+    window.location.replace(site_properties.add_emp_payroll_page);
 };
